@@ -21,10 +21,11 @@ public class Viewer {
 
 	public void viewerTicketNumber(Ticket ticket) {
 		setTicket(ticket);
-	} 
-	
+	}
+
 	public void viewerTicketNumber() {
-		System.out.println("Viewer Name is " + viewerName + " and Ticket id is " +getTicket().getTicketId());
-	} 
+		System.out.println("Viewer Name is " + viewerName
+				+ " and Ticket id is " + getTicket().getTicketId());
+	}
 
 }

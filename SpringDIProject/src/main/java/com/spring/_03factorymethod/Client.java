@@ -1,13 +1,13 @@
-package com.spring._02setterbasedDI;
+package com.spring._03factorymethod;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Cleint {
+public class Client {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("/_02applicationcontainerbeans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("/_03applicationcontainerbeans.xml");
 
 		Employee employee = (Employee) context.getBean("employee");
 		employee.employeeAddress();

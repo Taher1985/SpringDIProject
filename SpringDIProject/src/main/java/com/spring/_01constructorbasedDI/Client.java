@@ -3,7 +3,7 @@ package com.spring._01constructorbasedDI;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Cleint {
+public class Client {
 
 	public static void main(String[] args) {
 
