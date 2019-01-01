@@ -23,7 +23,7 @@
 		<bean class="com.spring._12siftingthroughcollections.Employee">
 			<property name="empName" value="Jay" />
 			<property name="empDep" value="Electric" />
-			<property name="empId" value="745"></property>
+			<property name="empId" value="745" />
 		</bean>
 		<ref bean="employee1" />
 	</util:list>
