@@ -13,6 +13,7 @@
 		<property name="address" value="#{address}" />
 		<property name="name" value="#{'Taher'}" />
 		<property name="nameRefProperties" value="#{address.city}" />
+		<property name="cityRefMethod" value="#{address.getCity().toUpperCase()}" />
 	</bean>
 
 	<bean id="address" class="com.spring._11wiringexpressionreference.Address">
