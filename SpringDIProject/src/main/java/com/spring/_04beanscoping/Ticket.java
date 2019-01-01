@@ -4,6 +4,11 @@ public class Ticket {
 
 	private String ticketId;
 
+	public Ticket(String ticketId) {
+		super();
+		this.ticketId = ticketId;
+	}
+
 	public String getTicketId() {
 		return ticketId;
 	}
@@ -11,10 +16,4 @@ public class Ticket {
 	public void setTicketId(String ticketId) {
 		this.ticketId = ticketId;
 	}
-
-	public Ticket(String ticketId) {
-		super();
-		this.ticketId = ticketId;
-	}
-
 }

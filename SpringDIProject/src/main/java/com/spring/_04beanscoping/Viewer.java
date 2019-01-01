@@ -5,17 +5,17 @@ public class Viewer {
 	private String viewerName;
 	private Ticket ticket;
 
+	public Viewer(String viewerName, Ticket ticket) {
+		super();
+		this.viewerName = viewerName;
+		this.ticket = ticket;
+	}
+
 	public Ticket getTicket() {
 		return ticket;
 	}
 
 	public void setTicket(Ticket ticket) {
-		this.ticket = ticket;
-	}
-
-	public Viewer(String viewerName, Ticket ticket) {
-		super();
-		this.viewerName = viewerName;
 		this.ticket = ticket;
 	}
 
