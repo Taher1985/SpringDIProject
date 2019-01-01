@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:lang="http://www.springframework.org/schema/lang" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean id="employee" class="com.spring._12siftingthroughcollections.Employee">
+		<property name="employeesList" value="#{employeesList}" />
+	</bean>
+
+	<util:list id="employeesList">
+		<bean class="com.spring._12siftingthroughcollections.Employee"
+			p:empName="Taher" p:empDep="IT" p:empId="123" />
+		<bean class="com.spring._12siftingthroughcollections.Employee"
+			p:empName="Param" p:empDep="Pharma" p:empId="456" />
+		<bean class="com.spring._12siftingthroughcollections.Employee"
+			p:empName="Amit" p:empDep="Auto" p:empId="789" />
+		<bean class="com.spring._12siftingthroughcollections.Employee">
+			<property name="empName" value="Jay" />
+			<property name="empDep" value="Electric" />
+			<property name="empId" value="745"></property>
+		</bean>
+		<ref bean="employee1" />
+	</util:list>
+
+	<bean id="employee1" class="com.spring._12siftingthroughcollections.Employee">
+		<property name="empName" value="Sumit" />
+		<property name="empDep" value="Admin" />
+		<property name="empId" value="825" />
+	</bean>
+
+</beans>
