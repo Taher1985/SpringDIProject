@@ -12,12 +12,12 @@
 		If "false", it will be instantiated on startup by bean factories that perform 
 		eager initialization of singletons. The effective default is "false". -->
 
-	<bean id="address" class="com.spring.setterbasedDI.Address" lazy-init="true">
+	<bean id="address" class="com.spring._02setterbasedDI.Address" lazy-init="true">
 		<property name="city" value="Indore" />
 		<property name="state" value="MP" />
 	</bean>
 
-	<bean id="employee" class="com.spring.setterbasedDI.Employee">
+	<bean id="employee" class="com.spring._02setterbasedDI.Employee">
 		<property name="name" value="Taher" />
 		<property name="address" ref="address" />
 	</bean>
